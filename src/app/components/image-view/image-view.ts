@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
@@ -19,5 +19,11 @@ export class ImageView {
 
   @Input() minWidth?: string;
   @Input() minHeight?: string;
+
+  @Output() imageLoadedEvent = new EventEmitter<void>();
+
+  protected imageLoaded() {
+    this.imageLoadedEvent.emit()
+  }
 
 }
