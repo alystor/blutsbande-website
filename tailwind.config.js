@@ -18,6 +18,11 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    {
+      pattern: /^text-bb-/,
+    },
+  ],
   plugins: [],
 }
 
