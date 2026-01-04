@@ -12,7 +12,7 @@ import {NgClass} from '@angular/common';
 export class TextView {
 
   @Input() color: string = "bb-scarlett"
-  @Input() size: "page-title" | "page-sub-title" | "text" | "section-title" | "text-title" = "text"
+  @Input() size: "page-title" | "page-sub-title" | "text" | "section-title" | "text-title" | "text-sub-title" = "text"
 
   private classDictionary(): { [key: string]: string[] } {
     return {
@@ -21,6 +21,7 @@ export class TextView {
       "text": ["text-[1.65vw] leading-[2.15vw]"],
       "section-title": ["text-[4.1vw] font-bold"],
       "text-title": ["text-[3.2vw] font-bold"],
+      "text-sub-title": ["text-[1.9vw] font-semibold"],
     }
   }
 
