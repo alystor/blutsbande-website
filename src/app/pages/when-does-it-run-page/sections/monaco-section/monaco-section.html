@@ -1,8 +1,13 @@
-<div class="w-full h-fit relative p-[5vw] pt-[15vw] pb-[15vw]">
+<div class="w-full h-fit relative p-[5vw] pt-[15vw]">
   <bb-image-view src="/monaco/C6.png" alt="" width="87vw"></bb-image-view>
 
   <div class="flex flex-col absolute top-[12vw] right-[6.5vw]">
     <bb-text-view size="text-title">Der endometriale Zyklus</bb-text-view>
     <bb-text-view size="text">{{ 'monaco.info-text-1' | textContent }}</bb-text-view>
   </div>
+</div>
+
+<div id="monaco-animation-container" class="h-[150vh] w-full relative transition-opacity opacity-0">
+  <bb-image-view (imageLoadedEvent)="imageLoaded()" class="block sticky top-0" src="/red_background.png" alt="" width="100%" height="100vh"/>
+  <bb-text-view id="monaco-animation-text" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" color="bb-ivory">{{ 'monaco.info-text-2' | textContent }}</bb-text-view>
 </div>
