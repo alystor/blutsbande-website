@@ -1,0 +1,40 @@
+<div class="w-full h-fit flex flex-col items-center justify-center p-[11vw] pb-[30vw] gap-[5vw] relative">
+  <bb-text-view size="text-title" color="bb-ruby">Die Zyklen eines Lebens</bb-text-view>
+  <div class="w-full h-fit flex">
+    <div class="w-fit flex flex-col gap-[2vw]">
+      <bb-text-view size="text">{{ 'oslo.info-text-1' | textContent }}</bb-text-view>
+      <bb-text-view size="text-foot-note">* die hier zugrunde liegende Quelle vergleicht nur<br>menstruierende Frauen
+      </bb-text-view>
+    </div>
+    <div class="flex-1 flex">
+      <div class="w-full flex flex-col items-center">
+        <bb-text-view class="font-semibold p-[1vw]" size="text">1815</bb-text-view>
+        <div class="grid grid-cols-10 gap-[0.3vw]">
+          @for (index of indexList(141); track index) {
+            <bb-image-view src="/oslo/C7.1.png" alt="" width="1.3vw"></bb-image-view>
+          }
+        </div>
+      </div>
+      <div class="w-full flex flex-col items-center">
+        <bb-text-view class="font-semibold p-[1vw]" size="text">2015</bb-text-view>
+        <div class="grid grid-cols-10 gap-[0.3vw]">
+          @for (index of indexList(438); track index) {
+            <bb-image-view src="/oslo/C7.1.png" alt="" width="1.3vw"></bb-image-view>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-[14vw] left-[23vw]">
+    <div class="relative h-fit w-fit">
+      <bb-image-view src="/oslo/C7.2.png" alt="" width="34vw"></bb-image-view>
+      <bb-text-view class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-nowrap w-full"
+                    size="text" color="bb-ivory">{{ 'oslo.info-text-2' | textContent }}
+      </bb-text-view>
+    </div>
+  </div>
+</div>
+
+<div class="w-full h-screen flex justify-center items-center">
+  <bb-text-view size="text">{{ 'oslo.info-text-3' | textContent }}</bb-text-view>
+</div>
