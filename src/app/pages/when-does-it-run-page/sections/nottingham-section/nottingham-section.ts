@@ -50,7 +50,6 @@ export class NottinghamSection {
               if (index === currentPage - 1) {
                 el.style.opacity = '1';
               } else {
-                console.log(el)
                 el.style.opacity = '0';
               }
             }
