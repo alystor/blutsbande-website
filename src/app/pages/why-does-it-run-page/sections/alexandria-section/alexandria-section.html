@@ -1,0 +1,15 @@
+<div class="h-screen w-full flex flex-col items-center justify-center">
+  <bb-text-view size="page-title" color="bb-olivia">warum läuft's?</bb-text-view>
+  <bb-text-view size="page-sub-title">Als das Bluten luktrativ wurde</bb-text-view>
+</div>
+
+<div class="h-screen w-full flex items-center justify-center">
+  <div class="flex h-fit flex items-center gap-[5vw] ">
+    <div class="relative w-[34wv]">
+      <bb-image-view id="alexandria-first-image" src="/alexandria/D1.png" alt="" width="34vw" (imageLoadedEvent)="imageLoaded()"/>
+      <bb-image-view id="alexandria-second-image" class="absolute top-0 left-0 opacity-0" src="/alexandria/D2.png"
+                     alt="" width="34vw"/>
+    </div>
+    <bb-text-view id="alexandria-info-text" class="opacity-0 transition-opacity delay-150" size="text">{{ 'alexandria.info-text-1' | textContent }}</bb-text-view>
+  </div>
+</div>
