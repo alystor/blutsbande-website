@@ -38,7 +38,6 @@ export class FujiSection {
       start: "top center",
       endTrigger: "#fuji-image-1",
       end: "bottom 30%",
-      markers: true,
       onUpdate: self => {
         const imageIndex = Math.min(this.images.length - 1, Math.floor(self.progress * this.images.length))
         if (imageIndex != this.currentIndex) {

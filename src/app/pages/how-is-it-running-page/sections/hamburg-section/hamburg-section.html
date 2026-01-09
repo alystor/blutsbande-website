@@ -1,0 +1,13 @@
+<div id="hamburg-animation-container" class="h-screen w-full relative">
+  <div class="h-full w-full flex items-center pl-[10vw] relative overflow-hidden">
+    <bb-text-view>{{ 'hamburg.info-text-1' |textContent }}</bb-text-view>
+    <bb-image-view id="hamburg-frame-1" (imageLoadedEvent)="imageLoaded()" class="absolute right-[20vw]" src="/hamburg/E5.png" alt="" width="5vw"></bb-image-view>
+    <bb-image-view id="hamburg-frame-3" class="absolute right-[-16vw] translate-y-[-12vw] opacity-0" src="/hamburg/E6.png" alt=""
+                   width="50vw"></bb-image-view>
+    <bb-image-view id="hamburg-frame-4" class="absolute right-[20vw] opacity-0" src="/hamburg/E7.png" alt="" width="3.7vw"></bb-image-view>
+  </div>
+  <div id="hamburg-frame-2" class="h-full w-full bg-red-100 top-0 left-0 absolute flex justify-center items-center opacity-0 transition-opacity">
+    <bb-image-view class="top-0 left-0" src="/red_background.png" alt="" width="100%" height="100vh"></bb-image-view>
+    <bb-text-view class="absolute" color="bb-ivory">{{ 'hamburg.quote-text-1' |textContent }}</bb-text-view>
+  </div>
+</div>
