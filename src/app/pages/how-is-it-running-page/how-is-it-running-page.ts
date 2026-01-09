@@ -3,6 +3,7 @@ import {BangaloreSection} from './sections/bangalore-section/bangalore-section';
 import {FujiSection} from './sections/fuji-section/fuji-section';
 import {HamburgSection} from './sections/hamburg-section/hamburg-section';
 import {KyotoSection} from './sections/kyoto-section/kyoto-section';
+import {MadridSection} from './sections/madrid-section/madrid-section';
 
 @Component({
   selector: 'bb-how-is-it-running-page',
@@ -10,7 +11,8 @@ import {KyotoSection} from './sections/kyoto-section/kyoto-section';
     BangaloreSection,
     FujiSection,
     HamburgSection,
-    KyotoSection
+    KyotoSection,
+    MadridSection
   ],
   templateUrl: './how-is-it-running-page.html',
   styleUrl: './how-is-it-running-page.scss',
