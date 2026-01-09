@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {TokyoSection} from './sections/tokyo-section/tokyo-section';
 
 @Component({
   selector: 'bb-menstruation-archive-page',
-  imports: [],
+  imports: [
+    TokyoSection
+  ],
   templateUrl: './menstruation-archive-page.html',
   styleUrl: './menstruation-archive-page.scss',
 })
