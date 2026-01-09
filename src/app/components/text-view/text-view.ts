@@ -22,7 +22,7 @@ export class TextView {
       "section-title": ["text-[4.1vw] font-bold"],
       "text-title": ["text-[3.2vw] font-bold"],
       "text-sub-title": ["text-[1.9vw] font-semibold"],
-      "text-foot-note": ["text-[1vw]"],
+      "text-foot-note": ["text-[1vw] leading-[1vw]"],
       "text-quote": ["text-[1.4vw]"],
     }
   }
