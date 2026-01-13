@@ -22,10 +22,11 @@ export class NavigationBar {
   }
 
   menuLookupTable: { [key: string]: string } = {
-    "/when-does-it-run": "/menu_ruby.png",
+    "/when-does-it-run": "/menu_rosalie.png",
     "/why-does-it-run": "/menu_olivia.png",
     "/how-is-it-running": "/menu_violet.png",
     "/menstruation-archive": "/menu_celeste.png",
+    "/bibliography": "/menu_ruby.png",
   }
 
   protected resolveMenuUrl() {
