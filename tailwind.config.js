@@ -11,6 +11,7 @@ module.exports = {
         'bb-sienna': '#E8542F',
         'bb-ruby': '#FF0000',
         'bb-scarlett': '#6B030A',
+        'bb-scarlett-darker': '#4A0207',
         'bb-sage': '#56967B',
         'bb-olivia': '#C5D86D',
         'bb-violet': '#5A5DB9',

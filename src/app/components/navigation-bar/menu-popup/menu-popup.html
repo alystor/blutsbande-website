@@ -1,0 +1,23 @@
+<!-- TODO Preload Image and Fade Menu in when image loaded -->
+<div class="h-[100dvh] w-screen flex justify-center items-center relative">
+  <div class="w-full h-full bg-gradient-to-l from-bb-scarlett to-bb-scarlett-darker"></div>
+  <div class="h-full aspect-[9/16] bg-bb-scarlett flex flex-col items-center pt-[4%] gap-[10%] relative">
+    <bb-image-view class="w-[42%]" src="/logo-creme.png" alt="Logo" width="100%"></bb-image-view>
+
+    <div class="w-fit flex flex-col items-center [&>*]:cursor-pointer hover:[&>*]:scale-105 [&>*]:transition-transform">
+      <bb-text-view (click)="navigateTo('/when-does-it-run')" size="text-menu" color="bb-ruby">wann läuft's?</bb-text-view>
+      <bb-text-view (click)="navigateTo('/why-does-it-run')" size="text-menu" color="bb-olivia">warum läuft's?</bb-text-view>
+      <bb-text-view (click)="navigateTo('/how-is-it-running')" size="text-menu" color="bb-violet">wie lief's?</bb-text-view>
+      <bb-text-view (click)="navigateTo('/menstruation-archive')" size="text-menu" color="bb-celeste">wie läuft's?</bb-text-view>
+    </div>
+
+    <div class="absolute left-[5dvh] bottom-[5dvh]">
+      <bb-text-view size="text-menu-link" color="bb-ivory">Bibliographie</bb-text-view>
+      <bb-text-view size="text-menu-link" color="bb-ivory">Impressum</bb-text-view>
+    </div>
+  </div>
+  <div class="w-full h-full bg-gradient-to-r from-bb-scarlett to-bb-scarlett-darker"></div>
+  <bb-text-view (click)="dialogRef.close()" class="absolute cursor-pointer right-[2dvh] top-[0dvh]" size="text-menu"
+                color="bb-ivory">x
+  </bb-text-view>
+</div>
