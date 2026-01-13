@@ -11,9 +11,9 @@
       <bb-text-view (click)="navigateTo('/menstruation-archive')" size="text-menu" color="bb-celeste">wie läuft's?</bb-text-view>
     </div>
 
-    <div class="absolute left-[5dvh] bottom-[5dvh]">
-      <bb-text-view size="text-menu-link" color="bb-ivory">Bibliographie</bb-text-view>
-      <bb-text-view size="text-menu-link" color="bb-ivory">Impressum</bb-text-view>
+    <div class="absolute left-[5dvh] bottom-[5dvh] [&>*]:cursor-pointer hover:[&>*]:underline [&>*]:decoration-bb-ivory">
+      <bb-text-view (click)="navigateTo('/bibliography')" size="text-menu-link" color="bb-ivory">Bibliographie</bb-text-view>
+      <bb-text-view (click)="navigateTo('/imprint')" size="text-menu-link" color="bb-ivory">Impressum</bb-text-view>
     </div>
   </div>
   <div class="w-full h-full bg-gradient-to-r from-bb-scarlett to-bb-scarlett-darker"></div>
