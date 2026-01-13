@@ -25,8 +25,9 @@ export class MonacoSection implements AfterViewInit{
   imageLoaded() {
     ScrollTrigger.create({
       trigger: "#monaco-animation-container",
-      start: "top top",
-      end: "bottom bottom",
+      start: "top 20%",
+      end: "bottom 80%",
+      markers:true,
       onEnter: () => gsap.set("#monaco-animation-container", { opacity: 1 }),
       onLeave: () => gsap.set("#monaco-animation-container", { opacity: 0 }),
       onEnterBack: () => gsap.set("#monaco-animation-container", { opacity: 1 }),
