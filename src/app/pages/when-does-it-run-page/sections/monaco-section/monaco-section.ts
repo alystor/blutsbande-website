@@ -27,7 +27,6 @@ export class MonacoSection implements AfterViewInit{
       trigger: "#monaco-animation-container",
       start: "top 20%",
       end: "bottom 80%",
-      markers:true,
       onEnter: () => gsap.set("#monaco-animation-container", { opacity: 1 }),
       onLeave: () => gsap.set("#monaco-animation-container", { opacity: 0 }),
       onEnterBack: () => gsap.set("#monaco-animation-container", { opacity: 1 }),
