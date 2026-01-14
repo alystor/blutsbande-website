@@ -49,14 +49,11 @@ export class PyongyangSection {
         }
       }
     })
-  }
 
-
-  protected createTransitionTrigger() {
     ScrollTrigger.create({
       trigger: "#pyongyang-transition-container",
       start: "top bottom",
-      end: "top top",
+      end: "top 1px",
       onEnter: () => gsap.set("#pyongyang-transition-container", {opacity: 1}),
       onLeave: () => gsap.set("#pyongyang-transition-container", {opacity: 0}),
       onEnterBack: () => gsap.set("#pyongyang-transition-container", {opacity: 1}),

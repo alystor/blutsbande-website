@@ -29,7 +29,6 @@ export class MadridSection {
       trigger: "#madrid-animation-container",
       start: "top 33%",
       end: "bottom 66%",
-      markers: true,
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {
