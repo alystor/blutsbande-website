@@ -7,6 +7,7 @@ import {MonacoSection} from './sections/monaco-section/monaco-section';
 import {OsloSection} from './sections/oslo-section/oslo-section';
 import {PyongyangSection} from './sections/pyongyang-section/pyongyang-section';
 import {ShenzhenSection} from './sections/shenzhen-section/shenzhen-section';
+import {TurinSection} from './sections/turin-section/turin-section';
 
 @Component({
   selector: 'bb-when-does-it-run-page',
@@ -18,7 +19,8 @@ import {ShenzhenSection} from './sections/shenzhen-section/shenzhen-section';
     MonacoSection,
     OsloSection,
     PyongyangSection,
-    ShenzhenSection
+    ShenzhenSection,
+    TurinSection
   ],
   templateUrl: './when-does-it-run-page.html',
   styleUrl: './when-does-it-run-page.scss',
