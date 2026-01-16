@@ -3,6 +3,7 @@ import {AlexandriaSection} from './sections/alexandria-section/alexandria-sectio
 import {DonetskSection} from './sections/donetsk-section/donetsk-section';
 import {IstanbulSection} from './sections/istanbul-section/istanbul-section';
 import {JakartaSection} from './sections/jakarta-section/jakarta-section';
+import {MilanSection} from './sections/milan-section/milan-section';
 
 @Component({
   selector: 'bb-why-does-it-run-page',
@@ -10,7 +11,8 @@ import {JakartaSection} from './sections/jakarta-section/jakarta-section';
     AlexandriaSection,
     DonetskSection,
     IstanbulSection,
-    JakartaSection
+    JakartaSection,
+    MilanSection
   ],
   templateUrl: './why-does-it-run-page.html',
   styleUrl: './why-does-it-run-page.scss',
