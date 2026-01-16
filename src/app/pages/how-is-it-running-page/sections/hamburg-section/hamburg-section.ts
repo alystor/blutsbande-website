@@ -22,14 +22,12 @@ export class HamburgSection {
   currentIndex = 0
 
   imageLoaded() {
-
-    const frames = [1, 2, 3, 4].map(n => document.getElementById("hamburg-frame-" + n))
+    const frames = [1, 2, 3, 4, 5].map(n => document.getElementById("hamburg-frame-" + n))
 
     ScrollTrigger.create({
       trigger: "#hamburg-animation-container",
-      start: "top top",
-      end: frames.length * 50 + "%",
-      pin: true,
+      start: "top center",
+      end: "bottom 60%",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {
@@ -41,5 +39,4 @@ export class HamburgSection {
       }
     })
   }
-
 }
