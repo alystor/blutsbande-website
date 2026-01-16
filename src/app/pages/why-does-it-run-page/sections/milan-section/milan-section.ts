@@ -20,12 +20,12 @@ export class MilanSection {
 
   protected imageLoaded() {
 
-    const frames = [1, 2, 3, 4].map(n => document.getElementById("milan-frame-" + n))
+    const frames = [1, 2, 3, 4, 5].map(n => document.getElementById("milan-frame-" + n))
 
     ScrollTrigger.create({
       trigger: "#milan-animation-container",
       start: "top 66%",
-      end: "bottom 75%",
+      end: "bottom 66%",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {
