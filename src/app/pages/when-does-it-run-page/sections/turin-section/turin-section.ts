@@ -47,7 +47,6 @@ export class TurinSection {
       trigger: "#turin-bottom-animation-container",
       start: "top 33%",
       end: "bottom 33%",
-      markers: true,
       onUpdate: self => {
         const currentFrame = Math.min(7 - 1, Math.floor(self.progress * 7))
         bottomImages.forEach((img, index) => {

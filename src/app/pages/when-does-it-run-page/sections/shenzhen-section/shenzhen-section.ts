@@ -54,7 +54,6 @@ export class ShenzhenSection {
       trigger: "#shenzhen-summary-container",
       start: "bottom bottom",
       end: "bottom top",
-      markers: true,
       onEnter: () => gsap.set("#shenzhen-transition-container", {opacity: 1}),
       onLeave: () => gsap.set("#shenzhen-transition-container", {opacity: 0}),
       onEnterBack: () => gsap.set("#shenzhen-transition-container", {opacity: 1}),

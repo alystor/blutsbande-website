@@ -45,7 +45,6 @@ export class IstanbulSection {
       trigger: "#istanbul-bottom-animation-container",
       start: "top 66%",
       end: "top -10%",
-      markers: true,
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {
