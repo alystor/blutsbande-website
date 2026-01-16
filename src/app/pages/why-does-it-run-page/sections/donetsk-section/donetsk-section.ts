@@ -3,6 +3,9 @@ import {ImageView} from '../../../../components/image-view/image-view';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {TextView} from '../../../../components/text-view/text-view';
 import {TextContentPipe} from '../../../../pipes/text-content-pipe';
+import {gsap} from 'gsap';
+
+gsap.registerPlugin(ScrollTrigger)
 
 @Component({
   selector: 'bb-donetsk-section',

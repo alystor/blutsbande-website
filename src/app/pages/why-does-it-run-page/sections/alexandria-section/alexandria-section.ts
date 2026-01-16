@@ -5,6 +5,8 @@ import {TextContentPipe} from '../../../../pipes/text-content-pipe';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {gsap} from 'gsap';
 
+gsap.registerPlugin(ScrollTrigger)
+
 @Component({
   selector: 'bb-alexandria-section',
   imports: [
