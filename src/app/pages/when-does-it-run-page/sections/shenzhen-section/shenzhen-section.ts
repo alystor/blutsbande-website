@@ -54,10 +54,10 @@ export class ShenzhenSection {
       trigger: "#shenzhen-summary-container",
       start: "bottom bottom",
       end: "bottom top",
-      onEnter: () => gsap.set("#shenzhen-transition-container", {opacity: 1}),
-      onLeave: () => gsap.set("#shenzhen-transition-container", {opacity: 0}),
-      onEnterBack: () => gsap.set("#shenzhen-transition-container", {opacity: 1}),
-      onLeaveBack: () => gsap.set("#shenzhen-transition-container", {opacity: 0}),
+      onEnter: () => gsap.set("#shenzhen-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeave: () => gsap.set("#shenzhen-transition-container", {opacity: 0, pointerEvents: "none"}),
+      onEnterBack: () => gsap.set("#shenzhen-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeaveBack: () => gsap.set("#shenzhen-transition-container", {opacity: 0, pointerEvents: "none"}),
       onUpdate: self => {
         if (self.progress > 0.2 && self.progress < 0.8) {
           gsap.to("#shenzhen-transition-text", {opacity: 1})

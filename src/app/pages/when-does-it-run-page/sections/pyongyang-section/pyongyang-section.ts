@@ -54,10 +54,10 @@ export class PyongyangSection {
       trigger: "#pyongyang-transition-container",
       start: "top bottom",
       end: "top 1px",
-      onEnter: () => gsap.set("#pyongyang-transition-container", {opacity: 1}),
-      onLeave: () => gsap.set("#pyongyang-transition-container", {opacity: 0}),
-      onEnterBack: () => gsap.set("#pyongyang-transition-container", {opacity: 1}),
-      onLeaveBack: () => gsap.set("#pyongyang-transition-container", {opacity: 0}),
+      onEnter: () => gsap.set("#pyongyang-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeave: () => gsap.set("#pyongyang-transition-container", {opacity: 0, pointerEvents: "none"}),
+      onEnterBack: () => gsap.set("#pyongyang-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeaveBack: () => gsap.set("#pyongyang-transition-container", {opacity: 0, pointerEvents: "none"}),
       onUpdate: self => {
         if (self.progress > 0.2 && self.progress < 0.8) {
           gsap.to("#pyongyang-transition-text", {opacity: 1})

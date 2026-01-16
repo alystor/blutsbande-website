@@ -60,10 +60,10 @@ export class IstanbulSection {
       trigger: "#istanbul-transition-container",
       start: "top 80%",
       end: "top 1px",
-      onEnter: () => gsap.set("#istanbul-transition-container", {opacity: 1}),
-      onLeave: () => gsap.set("#istanbul-transition-container", {opacity: 0}),
-      onEnterBack: () => gsap.set("#istanbul-transition-container", {opacity: 1}),
-      onLeaveBack: () => gsap.set("#istanbul-transition-container", {opacity: 0}),
+      onEnter: () => gsap.set("#istanbul-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeave: () => gsap.set("#istanbul-transition-container", {opacity: 0, pointerEvents: "none"}),
+      onEnterBack: () => gsap.set("#istanbul-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeaveBack: () => gsap.set("#istanbul-transition-container", {opacity: 0, pointerEvents: "none"}),
       onUpdate: self => {
         if (self.progress > 0.2 && self.progress < 0.8) {
           gsap.to("#istanbul-transition-text", {opacity: 1})

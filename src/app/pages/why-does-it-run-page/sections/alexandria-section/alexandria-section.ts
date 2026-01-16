@@ -39,10 +39,10 @@ export class AlexandriaSection {
       trigger: "#alexandria-transition-container",
       start: "top 80%",
       end: "top 1px",
-      onEnter: () => gsap.set("#alexandria-transition-container", {opacity: 1}),
-      onLeave: () => gsap.set("#alexandria-transition-container", {opacity: 0}),
-      onEnterBack: () => gsap.set("#alexandria-transition-container", {opacity: 1}),
-      onLeaveBack: () => gsap.set("#alexandria-transition-container", {opacity: 0}),
+      onEnter: () => gsap.set("#alexandria-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeave: () => gsap.set("#alexandria-transition-container", {opacity: 0, pointerEvents: "none"}),
+      onEnterBack: () => gsap.set("#alexandria-transition-container", {opacity: 1, pointerEvents: "auto"}),
+      onLeaveBack: () => gsap.set("#alexandria-transition-container", {opacity: 0, pointerEvents: "none"}),
       onUpdate: self => {
         if (self.progress > 0.2 && self.progress < 0.8) {
           gsap.to("#alexandria-transition-text", {opacity: 1})
