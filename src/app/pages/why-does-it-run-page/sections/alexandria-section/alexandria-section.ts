@@ -32,6 +32,23 @@ export class AlexandriaSection {
         gsap.set("#alexandria-info-text", {opacity: 0});
       }
     })
+
+    ScrollTrigger.create({
+      trigger: "#alexandria-transition-container",
+      start: "top 80%",
+      end: "top 1px",
+      onEnter: () => gsap.set("#alexandria-transition-container", {opacity: 1}),
+      onLeave: () => gsap.set("#alexandria-transition-container", {opacity: 0}),
+      onEnterBack: () => gsap.set("#alexandria-transition-container", {opacity: 1}),
+      onLeaveBack: () => gsap.set("#alexandria-transition-container", {opacity: 0}),
+      onUpdate: self => {
+        if (self.progress > 0.2 && self.progress < 0.8) {
+          gsap.to("#alexandria-transition-text", {opacity: 1})
+        } else {
+          gsap.to("#alexandria-transition-text", {opacity: 0})
+        }
+      }
+    })
   }
 
 }
