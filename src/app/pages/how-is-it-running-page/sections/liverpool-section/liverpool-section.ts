@@ -25,9 +25,9 @@ export class LiverpoolSection {
     ScrollTrigger.create({
       trigger: "#liverpool-animation-container",
       start: "top center",
-      end: "center center",
+      end: "center 55%",
       onUpdate: self => {
-        const normalizedProgress = Math.min(self.progress / 0.75, 1);
+        const normalizedProgress = Math.min(self.progress / 0.5, 1);
         const scale = Math.max(normalizedProgress * 4.4, 1);
 
         console.log(scale)
