@@ -25,7 +25,7 @@ export class NavigationBar {
     "/when-does-it-run": "/menu_rosalie.png",
     "/why-does-it-run": "/menu_olivia.png",
     "/how-is-it-running": "/menu_violet.png",
-    "/menstruation-archive": "/menu_celeste.png",
+    "/how-does-it-run": "/menu_celeste.png",
     "/bibliography": "/menu_ruby.png",
   }
 

@@ -12,7 +12,7 @@ export const routes: Routes = [
   {path: 'when-does-it-run', component: WhenDoesItRunPage},
   {path: 'why-does-it-run', component: WhyDoesItRunPage},
   {path: 'how-is-it-running', component: HowIsItRunningPage},
-  {path: 'menstruation-archive', component: MenstruationArchivePage},
+  {path: 'how-does-it-run', component: MenstruationArchivePage},
   {path: 'imprint', component: ImprintPage},
   {path: 'bibliography', component: BibliographyPage}
 ];
