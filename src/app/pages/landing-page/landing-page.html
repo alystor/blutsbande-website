@@ -1,6 +1,9 @@
-<div class="h-screen w-screen flex flex-col justify-center items-center text-[4vw] text-bb-scarlett font-semibold  [&_a:hover]:scale-125">
-  <a href="/when-does-it-run">wann läuft's?</a>
-  <a href="/why-does-it-run">warum läuft's?</a>
-  <a href="/how-is-it-running">wie lief's?</a>
-  <a href="/how-does-it-run">Menstruations Archiv</a>
+<div class="w-full aspect-video flex justify-center items-center">
+  <bb-image-view src="/logo_scarlett.png" alt="" width="47vw"/>
+</div>
+
+<div class="w-full aspect-video flex flex-col justify-center items-center gap-[5vw]">
+  <bb-text-view size="text">{{ 'landing-page-text-1' | textContent }}</bb-text-view>
+
+  <bb-next-page-button url="/when-does-it-run" color="rosalie">wann läuft's?</bb-next-page-button>
 </div>
