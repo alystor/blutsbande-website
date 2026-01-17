@@ -30,8 +30,6 @@ export class LiverpoolSection {
         const normalizedProgress = Math.min(self.progress / 0.5, 1);
         const scale = Math.max(normalizedProgress * 4.4, 1);
 
-        console.log(scale)
-
         gsap.set("#liverpool-image-1", {scale: scale});
       },
       onLeave: () => {

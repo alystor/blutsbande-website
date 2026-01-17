@@ -27,12 +27,10 @@ export class ParisSection {
       start: "center 66%",
       end: "center 66%",
       onEnter: () => {
-        console.log("enter")
         frame1!.style.opacity = '0'
         frame2!.style.opacity = '1'
       },
       onLeaveBack: () => {
-        console.log("leave back")
         frame1!.style.opacity = '1'
         frame2!.style.opacity = '0'
       }

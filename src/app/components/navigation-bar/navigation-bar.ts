@@ -24,7 +24,6 @@ export class NavigationBar {
   protected shouldRenderMenu(): boolean {
     const route = this.activatedRoute.snapshot.firstChild
 
-    console.log(route)
     return route?.data['showMenu'] ?? false
   }
 
