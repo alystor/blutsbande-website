@@ -8,11 +8,11 @@ import {ImprintPage} from './pages/imprint-page/imprint-page';
 import {BibliographyPage} from './pages/bibliography-page/bibliography-page';
 
 export const routes: Routes = [
-  {path: '', component: LandingPage},
-  {path: 'when-does-it-run', component: WhenDoesItRunPage},
-  {path: 'why-does-it-run', component: WhyDoesItRunPage},
-  {path: 'how-is-it-running', component: HowIsItRunningPage},
-  {path: 'how-does-it-run', component: MenstruationArchivePage},
-  {path: 'imprint', component: ImprintPage},
-  {path: 'bibliography', component: BibliographyPage}
+  {path: '', component: LandingPage, data: {showMenu: false}},
+  {path: 'when-does-it-run', component: WhenDoesItRunPage, data: {showMenu: true, menuSrc: "menu_rosalie.png"}},
+  {path: 'why-does-it-run', component: WhyDoesItRunPage, data: {showMenu: true, menuSrc: "menu_olivia.png"}},
+  {path: 'how-is-it-running', component: HowIsItRunningPage, data: {showMenu: true, menuSrc: "menu_violet.png"}},
+  {path: 'how-does-it-run', component: MenstruationArchivePage, data: {showMenu: true, menuSrc: "menu_celeste.png"}},
+  {path: 'imprint', component: ImprintPage, data: {showMenu: true, menuSrc: "menu_ruby.png"}},
+  {path: 'bibliography', component: BibliographyPage, data: {showMenu: true, menuSrc: "menu_ruby.png"}}
 ];

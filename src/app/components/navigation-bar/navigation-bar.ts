@@ -2,7 +2,7 @@ import {Component, inject} from '@angular/core';
 import {ImageView} from '../image-view/image-view';
 import {MenuPopup} from './menu-popup/menu-popup';
 import {Dialog} from '@angular/cdk/dialog';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'bb-navigation-bar',
@@ -14,23 +14,23 @@ import {Router} from '@angular/router';
 })
 export class NavigationBar {
 
-  router: Router = inject(Router)
   dialog: Dialog = inject(Dialog)
+  activatedRoute: ActivatedRoute = inject(ActivatedRoute)
 
   protected openMenu() {
     this.dialog.open(MenuPopup)
   }
 
-  menuLookupTable: { [key: string]: string } = {
-    "/when-does-it-run": "/menu_rosalie.png",
-    "/why-does-it-run": "/menu_olivia.png",
-    "/how-is-it-running": "/menu_violet.png",
-    "/how-does-it-run": "/menu_celeste.png",
-    "/bibliography": "/menu_ruby.png",
+  protected shouldRenderMenu(): boolean {
+    const route = this.activatedRoute.snapshot.firstChild
+
+    console.log(route)
+    return route?.data['showMenu'] ?? false
   }
 
   protected resolveMenuUrl() {
-    return this.menuLookupTable[this.router.url] ?? "/menu_ruby.png"
+    const route = this.activatedRoute.snapshot.firstChild
+    return route?.data['menuSrc'] ?? 'menu_ruby.png'
   }
 
 }

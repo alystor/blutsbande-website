@@ -1,2 +1,6 @@
-<bb-image-view (click)="openMenu()" class="fixed top-[5vw] right-[5vw] cursor-pointer select-none" [src]="resolveMenuUrl()" alt="Menu" width="5vw"
-               minWidth="50px"></bb-image-view>
+@if (this.shouldRenderMenu()) {
+  <bb-image-view (click)="openMenu()" class="fixed top-[5vw] right-[5vw] cursor-pointer select-none"
+                 [src]="resolveMenuUrl()" alt="Menu" width="5vw"
+                 minWidth="50px"></bb-image-view>
+}
+
