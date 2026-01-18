@@ -8,11 +8,15 @@ import {Dialog} from '@angular/cdk/dialog';
 import {
   MenstruationArchiveDataViewPopup
 } from '../menstruation-archive-data-view-popup/menstruation-archive-data-view-popup';
+import {
+  OrientationLayoutContainer
+} from '../../../../../components/orientation-layout-container/orientation-layout-container';
 
 @Component({
   selector: 'bb-menstruation-archive-data-view',
   imports: [
     ImageView,
+    OrientationLayoutContainer,
   ],
   templateUrl: './menstruation-archive-data-view.html',
   styleUrl: './menstruation-archive-data-view.scss',

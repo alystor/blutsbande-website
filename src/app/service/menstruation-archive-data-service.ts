@@ -6,6 +6,7 @@ import {MenstruationArchiveDataViewPositionData} from '../models/menstruation-ar
 
 const RECORD_URL: string = "menstruation-archive-data.json"
 const POSITION_URL: string = "menstruation-archive-data-view-position-data.json"
+const POSITION_P_URL: string = "position-p.json"
 
 @Injectable({
   providedIn: 'root',
@@ -28,6 +29,10 @@ export class MenstruationArchiveDataService {
 
   getPositionData(): Observable<MenstruationArchiveDataViewPositionData[]> {
     return this.httpClient.get<MenstruationArchiveDataViewPositionData[]>(POSITION_URL);
+  }
+
+  getPositionDataP(): Observable<MenstruationArchiveDataViewPositionData[]> {
+    return this.httpClient.get<MenstruationArchiveDataViewPositionData[]>(POSITION_P_URL);
   }
 
 }
