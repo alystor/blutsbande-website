@@ -6,8 +6,8 @@
       @if (records == undefined || positions == undefined) {
         loading data <!-- Todo add loading indicator -->
       } @else {
-        <div (click)="copyToClipboard()" class="top-[1vw] left-0 fixed bg-red-500 w-fit">Get JSON</div>
-        <div (click)="editorMode = !editorMode" class="top-[2vw] left-0 fixed bg-red-500 w-fit">Editor Mode</div>
+<!--        <div (click)="copyToClipboard()" class="top-[1vw] left-0 fixed bg-red-500 w-fit">Get JSON</div>-->
+<!--        <div (click)="editorMode = !editorMode" class="top-[2vw] left-0 fixed bg-red-500 w-fit">Editor Mode</div>-->
 
         @for (record of records; track record; let index = $index) {
           @if (editorMode) {

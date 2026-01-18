@@ -1,23 +1,23 @@
 <!-- TODO Preload Image and Fade Menu in when image loaded -->
-<div class="h-[100dvh] w-screen flex justify-center items-center relative select-none">
-  <div class="w-full h-full bg-gradient-to-l from-bb-scarlett to-bb-scarlett-darker"></div>
-  <div class="h-full aspect-[9/16] bg-bb-scarlett flex flex-col items-center relative">
-    <bb-image-view class="absolute top-[5vw] w-[42%]" src="logo_creme.png" alt="Logo" width="100%"></bb-image-view>
-
-    <div class="absolute top-[13vw] w-fit flex flex-col items-center [&>*]:cursor-pointer hover:[&>*]:scale-105 [&>*]:transition-transform">
-      <bb-text-view (click)="navigateTo('/when-does-it-run')" size="text-menu" color="bb-rosalie">wann läuft's?</bb-text-view>
-      <bb-text-view (click)="navigateTo('/why-does-it-run')" size="text-menu" color="bb-olivia">warum läuft's?</bb-text-view>
-      <bb-text-view (click)="navigateTo('/how-is-it-running')" size="text-menu" color="bb-violet">wie lief's?</bb-text-view>
-      <bb-text-view (click)="navigateTo('/how-does-it-run')" size="text-menu" color="bb-celeste">wie läuft's?</bb-text-view>
+<div class="w-screen h-screen bg-bb-scarlett flex flex-col items-center justify-center gap-[5vw] relative">
+  <div class="flex items-center justify-center">
+    <bb-image-view class="ml-[1.25vw]" src="logo_creme.png" alt="Logo" width="15vw"></bb-image-view>
+  </div>
+  <div class="h-fit flex flex-col gap-[5vw]">
+    <div class="w-fit flex flex-col items-center [&>*]:cursor-pointer hover:[&>*]:scale-105 [&>*]:transition-transform">
+            <bb-text-view (click)="navigateTo('/when-does-it-run')" size="text-menu" color="bb-rosalie">wann läuft's?</bb-text-view>
+            <bb-text-view (click)="navigateTo('/why-does-it-run')" size="text-menu" color="bb-olivia">warum läuft's?</bb-text-view>
+            <bb-text-view (click)="navigateTo('/how-is-it-running')" size="text-menu" color="bb-violet">wie lief's?</bb-text-view>
+            <bb-text-view (click)="navigateTo('/how-does-it-run')" size="text-menu" color="bb-celeste">wie läuft's?</bb-text-view>
     </div>
-
-    <div class="absolute left-[5dvh] bottom-[5dvh] [&>*]:cursor-pointer hover:[&>*]:underline [&>*]:decoration-bb-ivory">
+    <div class="flex justify-between [&>*]:cursor-pointer hover:[&>*]:underline [&>*]:decoration-bb-ivory">
       <bb-text-view (click)="navigateTo('/bibliography')" size="text-menu-link" color="bb-ivory">Bibliographie</bb-text-view>
       <bb-text-view (click)="navigateTo('/imprint')" size="text-menu-link" color="bb-ivory">Impressum</bb-text-view>
     </div>
   </div>
-  <div class="w-full h-full bg-gradient-to-r from-bb-scarlett to-bb-scarlett-darker"></div>
-  <bb-text-view (click)="dialogRef.close()" class="absolute cursor-pointer right-[15dvh] top-[8dvh]" size="text-menu"
-                color="bb-ivory">x
-  </bb-text-view>
+
+  <bb-text-view (click)="dialogRef.close()"
+                class="absolute cursor-pointer right-[5dvw] top-[3dvw] hover:scale-105 transition-transform"
+                size="text-menu"
+                color="bb-ivory">x</bb-text-view>
 </div>

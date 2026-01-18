@@ -26,8 +26,8 @@ export class TextView {
       "text-sub-title": ["text-[1.9vw] font-semibold"],
       "text-foot-note": ["text-[1vw] leading-[1vw]"],
       "text-quote": ["text-[1.4vw]"],
-      "text-menu": ["text-[5.2vh] font-bold"],
-      "text-menu-link": ["text-[3.0vh]"],
+      "text-menu": ["text-[4.2vw] font-bold"],
+      "text-menu-link": ["text-[2vw]"],
       "custom": [""]
     }
   }
