@@ -5,14 +5,14 @@
   </div>
   <bb-text-view class="absolute top-[47vw] left-[26vw]">{{ 'fuji.info-text-1' | textContent }}</bb-text-view>
 
-  <bb-image-view id="fuji-frame-1" class="absolute" src="/fuji/E1.png" alt="" width="100vw"/>
-  <bb-image-view id="fuji-frame-2" class="absolute opacity-0" src="/fuji/E2.png" alt="" width="100vw"/>
-  <bb-image-view id="fuji-frame-3" (imageLoadedEvent)="imageLoaded()" class="absolute opacity-0" src="/fuji/E3.png" alt="" width="100vw"/>
+  <bb-image-view id="fuji-frame-1" class="absolute" src="fuji/E1.png" alt="" width="100vw"/>
+  <bb-image-view id="fuji-frame-2" class="absolute opacity-0" src="fuji/E2.png" alt="" width="100vw"/>
+  <bb-image-view id="fuji-frame-3" (imageLoadedEvent)="imageLoaded()" class="absolute opacity-0" src="fuji/E3.png" alt="" width="100vw"/>
 </div>
 
 <div id="fuji-transition-container" class="relative opacity-0 transition-opacity z-10 pointer-events-none">
   <div class="h-fit w-full absolute transition-opacity flex items-center justify-center">
-    <bb-image-view class="fixed inset-0 bg-bb-ivory" src="/red_background.png"
+    <bb-image-view class="fixed inset-0 bg-bb-ivory" src="red_background.png"
                    alt="" width="100%" height="100vh"/>
     <bb-text-view class="z-20"
                   color="bb-ivory">{{ 'fuji.transition-text-1' | textContent }}

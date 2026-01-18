@@ -1,5 +1,5 @@
 <div class="w-full aspect-[1/1.125] relative">
-  <bb-image-view src="/osaka/E12.png" alt="" width="100%"/>
+  <bb-image-view src="osaka/E12.png" alt="" width="100%"/>
   <div class="absolute left-1/2 top-[36.5vw] -translate-x-1/2 ">
     <bb-text-view size="text-title" color="bb-violet">Periodisches Irre-Sein</bb-text-view>
     <bb-text-view>{{ 'osaka.info-text-1' | textContent }}</bb-text-view>
@@ -7,7 +7,7 @@
 </div>
 
 <div class="w-full aspect-[1/1.125] relative overflow-hidden">
-  <bb-image-view class="absolute z-20 opacity-[95%]" src="/osaka/E13.png" alt="" width="100vw"/>
+  <bb-image-view class="absolute z-20 opacity-[95%]" src="osaka/E13.png" alt="" width="100vw"/>
   <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
     <div class="leading-[4vw] italic flex flex-col gap-[1vw] text-center">
       <bb-text-view size="text-title">{{ 'osaka.quote-text-1' | textContent }}</bb-text-view>
@@ -23,7 +23,7 @@
 
 <div id="osaka-transition-container" class="relative opacity-0 transition-opacity z-10 pointer-events-none">
   <div class="h-fit w-full absolute transition-opacity flex items-center justify-center">
-    <bb-image-view (imageLoadedEvent)="imageLoaded()" class="fixed inset-0 bg-bb-ivory" src="/red_background.png"
+    <bb-image-view (imageLoadedEvent)="imageLoaded()" class="fixed inset-0 bg-bb-ivory" src="red_background.png"
                    alt="" width="100%" height="100vh"/>
     <bb-text-view class="z-20"
                   color="bb-ivory">{{ 'osaka.transition-text-1' | textContent }}
