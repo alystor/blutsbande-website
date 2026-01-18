@@ -34,10 +34,8 @@ export class LiverpoolSection {
       },
       onLeave: () => {
         gsap.set("#liverpool-image-1", {opacity: 0});
-        gsap.set("#liverpool-image-1", {translateY: "5vw"});
 
         gsap.set("#liverpool-text-1", {opacity: 0});
-        gsap.set("#liverpool-text-1", {translateX: "5vw"});
 
         gsap.set("#liverpool-image-2", {opacity: 1});
         gsap.set("#liverpool-image-2", {translateY: 0});
@@ -53,7 +51,6 @@ export class LiverpoolSection {
         gsap.set("#liverpool-text-1", {translateY: 0});
 
         gsap.set("#liverpool-image-2", {opacity: 0});
-        gsap.set("#liverpool-image-2", {translateY: "5vw"});
 
         gsap.set("#liverpool-text-2", {opacity: 0});
       }

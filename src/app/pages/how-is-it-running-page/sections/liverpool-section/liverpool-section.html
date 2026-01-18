@@ -6,7 +6,7 @@
 
 <div id="liverpool-animation-container" class="w-full aspect-[1/2]  relative ">
   <div id="liverpool-frame-1" class="w-full aspect-video flex items-center absolute inset-0 sticky">
-    <bb-image-view id="liverpool-image-1" class="absolute left-[25vw] -translate-x-1/2 duration-300 transition-[opacity,translate] ease-out" src="/liverpool/E10.1.png"
+    <bb-image-view id="liverpool-image-1" class="absolute left-[25vw] -translate-x-1/2 duration-700 delay-300 transition-[opacity,translate] ease-out" src="/liverpool/E10.1.png"
                    alt="" width="6.3vw"/>
     <bb-text-view id="liverpool-text-1" class="absolute duration-300 left-[50vw] transition-all"
                   size="text">{{ 'liverpool.info-text-2' |textContent }}
@@ -14,10 +14,11 @@
   </div>
 
   <div id="liverpool-frame-2" class="aspect-video w-full flex items-center absolute inset-0 sticky">
-    <bb-image-view id="liverpool-image-2" (imageLoadedEvent)="imageLoaded()" class="opacity-0 absolute left-[25vw] -translate-x-1/2 -translate-y-[5vw] ease-in duration-700 transition-[opacity,translate]"
+    <bb-image-view id="liverpool-image-2" (imageLoadedEvent)="imageLoaded()" class="opacity-0 absolute left-[25vw] -translate-x-1/2 ease-in duration-300 transition-[opacity,translate]"
                    src="/liverpool/E10.2.png" alt="" width="28vw"/>
     <bb-text-view id="liverpool-text-2" class="opacity-0 duration-300 absolute left-[50vw] transition-all"
                   size="text">{{ 'liverpool.info-text-3' |textContent }}
     </bb-text-view>
   </div>
 </div>
+<div class="w-full aspect-[1/0.2]"></div>

@@ -1,0 +1,9 @@
+<div class="w-[15vw] h-fit absolute -translate-x-1/2 flex items-center justify-center"
+     [style.left]="(positionData.left)+ 'vw'"
+     [style.top]="(positionData.top) + 'vw'"
+     [style.rotate]="(positionData.rotation) + 'deg'"
+     [ngClass]="{'sepia': selected}">
+  <bb-image-view [src]="getImageUrl()" alt="" width="15vw"/>
+
+  <bb-text-view class="absolute" color="bb-ivory" size="text-title">{{positionData.index}}</bb-text-view>
+</div>

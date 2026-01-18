@@ -24,8 +24,9 @@ export class MilanSection {
 
     ScrollTrigger.create({
       trigger: "#milan-animation-container",
-      start: "top 66%",
-      end: "bottom 66%",
+      start: "center center",
+      end: frames.length * 30 + "%",
+      pin: true,
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {

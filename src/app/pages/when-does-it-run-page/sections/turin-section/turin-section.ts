@@ -45,7 +45,7 @@ export class TurinSection {
 
     ScrollTrigger.create({
       trigger: "#turin-bottom-animation-container",
-      start: "top 33%",
+      start: "center center",
       end: "bottom 33%",
       onUpdate: self => {
         const currentFrame = Math.min(7 - 1, Math.floor(self.progress * 7))

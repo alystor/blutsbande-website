@@ -26,8 +26,8 @@ export class HamburgSection {
 
     ScrollTrigger.create({
       trigger: "#hamburg-animation-container",
-      start: "top center",
-      end: "bottom 60%",
+      start: "center 60%",
+      end: "bottom 45%",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {

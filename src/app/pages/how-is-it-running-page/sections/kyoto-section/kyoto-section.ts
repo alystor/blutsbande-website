@@ -25,7 +25,7 @@ export class KyotoSection {
 
     ScrollTrigger.create({
       trigger:"#kyoto-animation-container",
-      start:"center center",
+      start:"center 95%",
       onEnter: () => {
         frame1!.style.opacity = '0'
         frame2!.style.opacity = '1'

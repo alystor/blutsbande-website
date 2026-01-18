@@ -24,8 +24,8 @@ export class ManchesterSection {
 
     ScrollTrigger.create({
       trigger: "#manchester-animation-container",
-      start: "top 66%",
-      end: "center 45%",
+      start: "top 55%",
+      end: "center 50%",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {

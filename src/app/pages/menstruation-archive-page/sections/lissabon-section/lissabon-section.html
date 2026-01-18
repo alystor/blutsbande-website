@@ -1,0 +1,19 @@
+<!-- TODO Finish implementation of this section -->
+<div class="w-full relative">
+  @if (records == undefined || positions == undefined) {
+    loading data <!-- Todo add loading indicator -->
+  } @else {
+    <div (click)="copyToClipboard()" class="top-[1vw] left-0 fixed bg-red-500 w-fit">Get JSON</div>
+    <div (click)="editorMode = !editorMode" class="top-[2vw] left-0 fixed bg-red-500 w-fit">Editor Mode</div>
+
+    @for (record of records; track record; let index = $index) {
+      @if (editorMode) {
+        <bb-menstruation-archive-data-view-editor class="grayscale" #view (click)="view.selected = !view.selected"
+                                                  [positionData]="getPositionDataForIndex(index)"
+                                                  (positionDataChange)="updatePositionData(index, $event)"></bb-menstruation-archive-data-view-editor>
+      } @else {
+        <bb-menstruation-archive-data-view [recordData]="record" [positionData]="getPositionDataForIndex(index)"/>
+      }
+    }
+  }
+</div>

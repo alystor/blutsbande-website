@@ -23,8 +23,8 @@ export class JakartaSection {
 
     ScrollTrigger.create({
       trigger: "#jakarta-animation-container",
-      start: "top 30%",
-      end: "bottom 85%",
+      start: "top 20%",
+      end: "bottom bottom",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {

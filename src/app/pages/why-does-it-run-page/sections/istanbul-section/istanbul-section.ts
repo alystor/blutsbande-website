@@ -43,8 +43,8 @@ export class IstanbulSection {
 
     ScrollTrigger.create({
       trigger: "#istanbul-bottom-animation-container",
-      start: "top 66%",
-      end: "top -10%",
+      start: "top 5%",
+      end: "top -20%",
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
         if (imageIndex != this.currentIndex) {
