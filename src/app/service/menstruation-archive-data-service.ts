@@ -4,8 +4,8 @@ import {map, Observable} from 'rxjs';
 import {MenstruationArchiveDataRecord} from '../models/menstruation-archive-data-record';
 import {MenstruationArchiveDataViewPositionData} from '../models/menstruation-archive-data-view-position-data';
 
-const RECORD_URL: string = "/menstruation-archive-data.json"
-const POSITION_URL: string = "/menstruation-archive-data-view-position-data.json"
+const RECORD_URL: string = "menstruation-archive-data.json"
+const POSITION_URL: string = "menstruation-archive-data-view-position-data.json"
 
 @Injectable({
   providedIn: 'root',

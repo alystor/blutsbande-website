@@ -34,7 +34,7 @@ export class MenstruationArchiveDataViewEditor {
   private dragStartTop = 0
 
   getImageUrl() {
-    return "/lissabon/F7." + (this.positionData.image) + ".png"
+    return "lissabon/F7." + (this.positionData.image) + ".png"
   }
 
   @HostListener('window:keydown', ['$event'])

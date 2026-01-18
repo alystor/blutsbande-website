@@ -28,7 +28,7 @@ export class MenstruationArchiveDataView {
   positionData!: MenstruationArchiveDataViewPositionData
 
   getImageUrl() {
-    return "/lissabon/F7." + (this.positionData.image) + ".png"
+    return "lissabon/F7." + (this.positionData.image) + ".png"
   }
 
   openPopup() {
