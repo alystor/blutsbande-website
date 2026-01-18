@@ -58,13 +58,6 @@ export class PyongyangSection {
       onLeave: () => gsap.set("#pyongyang-transition-container", {opacity: 0, pointerEvents: "none"}),
       onEnterBack: () => gsap.set("#pyongyang-transition-container", {opacity: 1, pointerEvents: "auto"}),
       onLeaveBack: () => gsap.set("#pyongyang-transition-container", {opacity: 0, pointerEvents: "none"}),
-      onUpdate: self => {
-        if (self.progress > 0.2 && self.progress < 0.8) {
-          gsap.to("#pyongyang-transition-text", {opacity: 1})
-        } else {
-          gsap.to("#pyongyang-transition-text", {opacity: 0})
-        }
-      }
     })
   }
 
