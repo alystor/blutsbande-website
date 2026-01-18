@@ -22,20 +22,17 @@ export class IstanbulSection {
   currentIndex = 0
 
   protected imageLoaded() {
-    const frame1 = document.getElementById("istanbul-top-frame-1")
-    const frame2 = document.getElementById("istanbul-top-frame-2")
+    const frame = document.getElementById("istanbul-top-frame-1")
 
     ScrollTrigger.create({
       trigger: "#istanbul-top-animation-container",
-      start: "top 33%",
-      end: "top 33%",
+      start: "top 25%",
+      end: "top 25%",
       onEnter: () => {
-        frame1!.style.opacity = '0'
-        frame2!.style.opacity = '1'
+        frame!.style.opacity = '1'
       },
       onLeaveBack: () => {
-        frame1!.style.opacity = '1'
-        frame2!.style.opacity = '0'
+        frame!.style.opacity = '0'
       }
     })
 

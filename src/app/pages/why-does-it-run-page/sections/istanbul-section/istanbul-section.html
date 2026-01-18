@@ -4,9 +4,9 @@
 
 <div id="istanbul-top-animation-container" class="w-full aspect-video relative flex items-center">
   <bb-text-view class="absolute left-[50vw]" size="text">{{ 'istanbul.info-text-1' | textContent }}</bb-text-view>
-  <bb-image-view id="istanbul-top-frame-1" class="absolute left-[7vw]" src="/istanbul/D9.png" alt="" width="35vw"/>
-  <bb-image-view (imageLoadedEvent)="imageLoaded()" id="istanbul-top-frame-2"
-                 class="absolute left-[7vw] opacity-0" src="/istanbul/D10.png" alt="" width="35vw"/>
+  <bb-image-view class="absolute left-[7vw]" src="/istanbul/D9.png" alt="" width="35vw"/>
+  <bb-image-view (imageLoadedEvent)="imageLoaded()" id="istanbul-top-frame-1"
+                 class="absolute left-[7vw] opacity-0 transition-opacity" src="/istanbul/D10.png" alt="" width="35vw"/>
 </div>
 
 <div class="w-full h-screen min-h-[56.25vw]">
