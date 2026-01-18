@@ -43,7 +43,9 @@ export class FujiSection {
     ScrollTrigger.create({
       trigger: "#fuji-transition-container",
       start: "top 80%",
-      end: "top 1px",
+      // todo make this dynamic based on the text size of the transition
+      end: "top -50%",
+      markers:true,
       onEnter: () => gsap.set("#fuji-transition-container", {opacity: 1, pointerEvents: "auto"}),
       onLeave: () => gsap.set("#fuji-transition-container", {opacity: 0, pointerEvents: "none"}),
       onEnterBack: () => gsap.set("#fuji-transition-container", {opacity: 1, pointerEvents: "auto"}),
