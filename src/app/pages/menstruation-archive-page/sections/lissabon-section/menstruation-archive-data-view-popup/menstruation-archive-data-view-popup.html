@@ -13,6 +13,18 @@
         <bb-text-view class="italic" color="bb-ivory">{{ data.record.description }}</bb-text-view>
       </div>
     </div>
+
+    @if (canNavigatePrevious()) {
+      <span (click)="navigateToPrevious()" class="select-none cursor-pointer absolute left-[5vw] text-[10vw] text-bb-celeste hover:scale-110 transition-transform"> < </span>
+    }
+    @if (canNavigateNext()) {
+      <span (click)="navigateToNext()" class="select-none cursor-pointer absolute right-[5vw] text-[10vw] text-bb-celeste hover:scale-110 transition-transform"> > </span>
+    }
+
+    <bb-text-view (click)="dialogRef.close()"
+                  class="absolute cursor-pointer right-[4dvw] top-[1dvw] hover:scale-105 transition-transform"
+                  size="text-menu"
+                  color="bb-scarlett">x</bb-text-view>
   </div>
 
   <div portrait (click)="dialogRef.close()" class="relative w-screen h-screen flex justify-center overflow-hidden bg-bb-ivory p-[5vw]">

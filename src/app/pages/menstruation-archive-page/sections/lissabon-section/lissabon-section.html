@@ -15,7 +15,7 @@
                                                       [positionData]="getPositionDataForIndex(index)"
                                                       (positionDataChange)="updatePositionData(index, $event)"></bb-menstruation-archive-data-view-editor>
           } @else {
-            <bb-menstruation-archive-data-view [recordData]="record" [positionData]="getPositionDataForIndex(index)"/>
+            <bb-menstruation-archive-data-view [recordData]="record" [positionData]="getPositionDataForIndex(index)" [currentIndex]="index" [allRecords]="records" [allPositions]="positions"/>
           }
         }
       }
@@ -28,7 +28,7 @@
         loading data <!-- Todo add loading indicator -->
       } @else {
         @for (record of records; track record; let index = $index) {
-          <bb-menstruation-archive-data-view [recordData]="record" [positionData]="getPositionDataForIndexP(index)"/>
+          <bb-menstruation-archive-data-view [recordData]="record" [positionData]="getPositionDataForIndexP(index)" [currentIndex]="index" [allRecords]="records" [allPositions]="positionsP"/>
         }
       }
     </div>

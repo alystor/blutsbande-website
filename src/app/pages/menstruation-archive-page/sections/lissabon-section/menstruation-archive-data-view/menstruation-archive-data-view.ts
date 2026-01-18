@@ -31,13 +31,28 @@ export class MenstruationArchiveDataView {
   @Input({required: true})
   positionData!: MenstruationArchiveDataViewPositionData
 
+  @Input({required: true})
+  currentIndex!: number
+
+  @Input({required: true})
+  allRecords!: MenstruationArchiveDataRecord[]
+
+  @Input({required: true})
+  allPositions!: MenstruationArchiveDataViewPositionData[]
+
   getImageUrl() {
     return "lissabon/F7." + (this.positionData.image) + ".png"
   }
 
   openPopup() {
     this.dialog.open(MenstruationArchiveDataViewPopup, {
-      data: {record: this.recordData, position: this.positionData}
+      data: {
+        record: this.recordData,
+        position: this.positionData,
+        currentIndex: this.currentIndex,
+        allRecords: this.allRecords,
+        allPositions: this.allPositions
+      }
     })
   }
 

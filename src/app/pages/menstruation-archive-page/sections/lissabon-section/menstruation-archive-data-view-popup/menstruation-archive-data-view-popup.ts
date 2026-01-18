@@ -23,10 +23,55 @@ import {
 export class MenstruationArchiveDataViewPopup {
 
   dialogRef: DialogRef = inject(DialogRef)
+  dialog = inject(Dialog)
 
   constructor(@Inject(DIALOG_DATA) public data: {
     record: MenstruationArchiveDataRecord,
     position: MenstruationArchiveDataViewPositionData,
+    currentIndex: number,
+    allRecords: MenstruationArchiveDataRecord[],
+    allPositions: MenstruationArchiveDataViewPositionData[],
   }) {}
+
+  navigateToPrevious() {
+    if (this.data.currentIndex > 0) {
+      const newIndex = this.data.currentIndex - 1;
+      this.navigateToIndex(newIndex);
+    }
+  }
+
+  navigateToNext() {
+    if (this.data.currentIndex < this.data.allRecords.length - 1) {
+      const newIndex = this.data.currentIndex + 1;
+      this.navigateToIndex(newIndex);
+    }
+  }
+
+  private navigateToIndex(index: number) {
+    const newRecord = this.data.allRecords[index];
+    const newPosition = this.data.allPositions.find(pos => pos.index === index) ??
+      this.data.allPositions[index] ??
+      this.data.position;
+
+    this.dialogRef.close();
+
+    this.dialog.open(MenstruationArchiveDataViewPopup, {
+      data: {
+        record: newRecord,
+        position: newPosition,
+        currentIndex: index,
+        allRecords: this.data.allRecords,
+        allPositions: this.data.allPositions
+      }
+    });
+  }
+
+  canNavigatePrevious(): boolean {
+    return this.data.currentIndex > 0;
+  }
+
+  canNavigateNext(): boolean {
+    return this.data.currentIndex < this.data.allRecords.length - 1;
+  }
 
 }
