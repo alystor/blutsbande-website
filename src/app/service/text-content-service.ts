@@ -13,7 +13,7 @@ export class TextContentService {
   }
 
   async loadConfig() {
-    this.loadedTextData = await firstValueFrom(this.httpClient.get('/text-content.json'));
+    this.loadedTextData = await firstValueFrom(this.httpClient.get('text-content.json'));
   }
 
   getString(path: string): string {
