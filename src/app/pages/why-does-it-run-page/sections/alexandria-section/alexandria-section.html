@@ -1,0 +1,28 @@
+<div class="h-screen w-full flex flex-col items-center justify-center">
+  <bb-text-view size="page-title" color="bb-olivia">warum läuft's?</bb-text-view>
+  <bb-text-view size="page-sub-title">Das Blut und die Blutsverwandten</bb-text-view>
+</div>
+
+<div class="h-screen w-full flex items-center justify-center">
+  <div class="flex h-fit flex items-center gap-[5vw] ">
+    <div class="relative w-[34wv]">
+      <bb-image-view id="alexandria-first-image" src="alexandria/D1.png" alt="" width="34vw" (imageLoadedEvent)="imageLoaded()"/>
+      <bb-image-view id="alexandria-second-image" class="absolute top-0 left-0 opacity-0" src="alexandria/D2.png"
+                     alt="" width="34vw"/>
+    </div>
+    <bb-text-view id="alexandria-info-text" class="opacity-0 transition-opacity delay-150" size="text">{{ 'alexandria.info-text-1' | textContent }}</bb-text-view>
+  </div>
+</div>
+
+<div id="alexandria-transition-container" class="relative opacity-0 transition-opacity z-10 pointer-events-none">
+  <div class="h-fit w-full absolute transition-opacity flex items-center justify-center">
+    <bb-image-view class="fixed inset-0 bg-bb-ivory" src="red_background.png"
+                    alt="" width="100%" height="100vh"/>
+    <bb-text-view class="z-20"
+                  color="bb-ivory">{{ 'alexandria.transition-text-1' | textContent }}
+    </bb-text-view>
+  </div>
+</div>
+
+<!-- Spacer -->
+<div class="h-[50vh] w-full"></div>

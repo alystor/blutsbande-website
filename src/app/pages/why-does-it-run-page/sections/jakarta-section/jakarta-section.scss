@@ -1,0 +1,8 @@
+.fade-out-only {
+  transition: none;
+}
+
+.fade-out-only[style*="opacity:0"],
+.fade-out-only[style*="opacity: 0"] {
+  transition: opacity 0.3s ease-in-out;
+}

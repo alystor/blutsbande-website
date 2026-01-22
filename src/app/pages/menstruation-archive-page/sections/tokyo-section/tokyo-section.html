@@ -1,0 +1,27 @@
+<bb-orientation-layout-container>
+  <div landscape>
+    <div class="h-screen w-full flex flex-col items-center justify-center">
+      <bb-text-view size="page-title" color="bb-celeste">wie läuft's?</bb-text-view>
+      <bb-text-view size="page-sub-title">Ein multiperspektivisches Menstruationsarchiv</bb-text-view>
+    </div>
+
+    <div class="w-full aspect-video flex justify-center items-center">
+      <bb-text-view size="text">{{ 'tokyo.info-text-1'|textContent }}</bb-text-view>
+    </div>
+  </div>
+
+  <!-- -->
+
+  <div portrait>
+    <div class="h-screen w-full flex flex-col items-center pt-[20vh] text-center">
+      <bb-text-view mode="portrait" size="page-title" color="bb-celeste">wie läuft's?</bb-text-view>
+      <bb-text-view mode="portrait" size="page-sub-title">Ein multiperspektivisches<br>Menstruationsarchiv
+      </bb-text-view>
+    </div>
+
+    <div class="h-screen w-full flex flex-col items-center justify-center">
+      <bb-text-view mode="portrait" size="text">{{ 'tokyo.info-text-1-p'| textContent }}</bb-text-view>
+    </div>
+  </div>
+</bb-orientation-layout-container>
+

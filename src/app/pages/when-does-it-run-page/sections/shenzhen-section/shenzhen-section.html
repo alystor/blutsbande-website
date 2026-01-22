@@ -1,0 +1,83 @@
+<div class="h-fit w-full">
+  <div id="shenzhen-animation-container" class="w-full h-screen relative z-0">
+
+    <div id="shenzhen-frame-1" class="w-full h-screen absolute opacity-1">
+      <bb-image-view (imageLoadedEvent)="imageLoaded()" class="absolute left-0 bottom-0" src="shenzhen/C21.2_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-2" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.3_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-3" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.4_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-4" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.4_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-5" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.5_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-6" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.6_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <div id="shenzhen-frame-7" class="w-full h-screen absolute opacity-0">
+      <bb-image-view class="absolute left-0 bottom-0" src="shenzhen/C21.7_R.png"
+                     alt="" width="55vw"/>
+      <bb-image-view class="absolute left-[45vw] bottom-[40vw]" src="pyongyang/C8.2.png" alt="" width="4vw"/>
+    </div>
+
+    <bb-text-view id="shenzhen-text-1" data-frame-index="1,2"
+                  class="absolute left-[60vw] bottom-[5vw] opacity-1 transition-opacity"
+                  size="text">{{ 'shenzhen.info-text-1' | textContent }}
+    </bb-text-view>
+    <bb-text-view id="shenzhen-text-2" data-frame-index="3"
+                  class="absolute left-[60vw] bottom-[5vw] opacity-0 transition-opacity"
+                  size="text">{{ 'shenzhen.info-text-2' | textContent }}
+    </bb-text-view>
+    <bb-text-view id="shenzhen-text-3" data-frame-index="4,5,6"
+                  class="absolute left-[60vw] bottom-[5vw] opacity-0 transition-opacity"
+                  size="text">{{ 'shenzhen.info-text-3' | textContent }}
+    </bb-text-view>
+    <bb-text-view id="shenzhen-text-4" data-frame-index="7"
+                  class="absolute left-[60vw] bottom-[5vw] opacity-0 transition-opacity"
+                  size="text">{{ 'shenzhen.info-text-4' | textContent }}
+    </bb-text-view>
+  </div>
+  <div id="shenzhen-summary-container" class="w-full aspect-[16/9] relative">
+    <bb-image-view class="absolute left-0 top-0" src="shenzhen/C21.8_R.png"
+                   alt="" width="48.5vw"/>
+
+    <div class="absolute w-full bottom-[10vw] text-center flex items-center flex-col gap-[3vw]">
+      <bb-text-view size="text">also nochmal zusammengefasst:</bb-text-view>
+      <bb-text-view class="font-bold" size="text">es blutet,<br>wächst,<br>und wächst,<br>und wächst weiter,<br>und blutet wieder</bb-text-view>
+    </div>
+  </div>
+
+</div>
+
+<div id="shenzhen-transition-container" class="relative opacity-0 transition-opacity z-10 pointer-events-none">
+  <div class="h-fit w-full absolute transition-opacity flex items-center justify-center">
+    <bb-image-view  class="fixed inset-0 bg-bb-ivory" src="red_background.png"
+                   alt="" width="100%" height="100vh"/>
+    <bb-text-view class="z-20"
+                  color="bb-ivory">{{ 'shenzhen.transition-text-1' | textContent }}
+    </bb-text-view>
+  </div>
+</div>

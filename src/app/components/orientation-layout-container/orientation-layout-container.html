@@ -1,0 +1,5 @@
+@if (breakpointService.isLandscape$ | async) {
+  <ng-content select="[landscape]"></ng-content>
+} @else {
+  <ng-content select="[portrait]"></ng-content>
+}

@@ -1,0 +1,17 @@
+<div id="paris-animation-container" class="w-full aspect-[1/1.125] relative overflow-hidden">
+  <bb-text-view class="absolute left-[10vw] top-[7vw]" size="text">{{ 'paris.info-text-1' |textContent }}</bb-text-view>
+  <bb-image-view class="absolute fade-out-only" id="paris-frame-1" src="paris/D31.png" alt="" width="100vw"/>
+  <bb-image-view (imageLoadedEvent)="imageLoaded()" class="opacity-0 absolute" id="paris-frame-2" src="paris/D32.png"
+                 alt=""
+                 width="100vw"/>
+</div>
+
+<div class="w-full aspect-[1/1.125] relative overflow-hidden">
+  <bb-text-view class="absolute left-[22vw] -transition-x-1/2 top-[7vw]" size="text">{{ 'paris.info-text-2' |textContent }}</bb-text-view>
+  <bb-text-view class="absolute left-[53vw] -transition-x-1/2 top-[7vw]" size="text">{{ 'paris.info-text-3' |textContent }}</bb-text-view>
+  <bb-image-view class="absolute bottom-0" src="paris/D33.png" alt="" width="100vw"/>
+</div>
+
+<div class="w-full h-[50vw] relative">
+  <bb-next-page-button url="/how-is-it-running" color="violet" class="absolute top-[30vw] left-1/2 -translate-x-1/2">wie lief's?</bb-next-page-button>
+</div>

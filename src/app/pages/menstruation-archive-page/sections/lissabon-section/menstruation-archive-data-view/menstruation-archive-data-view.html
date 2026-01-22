@@ -1,0 +1,23 @@
+<bb-orientation-layout-container>
+
+  <div landscape (click)="openPopup()" class="w-[15vw] h-fit absolute -translate-x-1/2 flex items-center justify-center hover:scale-110 transition-transform  text-bb-ivory hover:text-bb-celeste select-none cursor-pointer"
+       [style.left]="(positionData.left)+ 'vw'"
+       [style.top]="(positionData.top) + 'vw'"
+       [style.rotate]="(positionData.rotation) + 'deg'">
+
+    <bb-image-view [src]="getImageUrl()" alt="" width="15vw"/>
+
+    <span [style.rotate]="(-positionData.rotation) + 'deg'" class="absolute text-[6vw] font-semibold">{{ recordData.intensity }}</span>
+  </div>
+
+  <div portrait (click)="openPopup()" class="w-[15vw] h-fit absolute -translate-x-1/2 flex items-center justify-center hover:scale-110 transition-transform  text-bb-ivory hover:text-bb-celeste select-none cursor-pointer"
+       [style.left]="(positionData.left)+ 'vw'"
+       [style.top]="(positionData.top) + 'vw'"
+       [style.rotate]="(positionData.rotation) + 'deg'">
+
+    <bb-image-view [src]="getImageUrl()" alt="" width="30vw"/>
+
+    <span [style.rotate]="(-positionData.rotation) + 'deg'" class="absolute text-[6vw] font-semibold">{{ recordData.intensity }}</span>
+  </div>
+
+</bb-orientation-layout-container>

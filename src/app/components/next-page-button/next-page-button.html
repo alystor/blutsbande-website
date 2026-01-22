@@ -1,0 +1,5 @@
+<div (click)="navigateTo()" class="w-fit h-fit relative flex justify-center items-center group cursor-pointer">
+  <bb-image-view class="group-hover:scale-110 transition-transformation  duration-500" [src]="'/next_page_button_' + color + '.png'" alt="" width="20vw"/>
+  <bb-text-view class="group-hover:scale-105 transition-transformation duration-500 absolute text-[2vw] font-bold" size="custom" color="bb-ivory"><ng-content></ng-content></bb-text-view>
+  <bb-text-view class="absolute bottom-[-2vw] text-[3vw] font-bold opacity-0 group-hover:opacity-100 group-hover:translate-y-[2vw] transition-all duration-500 " size="custom" [color]="'bb-'+color">v</bb-text-view>
+</div>

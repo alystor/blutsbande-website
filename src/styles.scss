@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://use.typekit.net/ytn6eph.css");
+
+* {
+  font-family: 'new-zen', sans-serif;
+}
+
+body {
+  background-color: theme('colors.bb-ivory');
+}

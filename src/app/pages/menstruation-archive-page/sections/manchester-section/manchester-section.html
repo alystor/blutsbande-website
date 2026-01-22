@@ -1,0 +1,40 @@
+
+<bb-orientation-layout-container>
+  <div landscape>
+    <div class="w-full aspect-video relative flex items-center">
+      <bb-text-view id="manchester-animation-container" class="absolute left-[50vw]" size="text">{{ 'manchester.info-text-1' | textContent }}</bb-text-view>
+      <bb-image-view id="manchester-frame-1" class="absolute opacity-1" src="manchester/F1.png" alt="" width="50vw"/>
+      <bb-image-view id="manchester-frame-2" class="absolute opacity-0" src="manchester/F2.png" alt="" width="50vw"/>
+      <bb-image-view id="manchester-frame-3" class="absolute opacity-0" src="manchester/F3.png" alt="" width="50vw"/>
+      <bb-image-view id="manchester-frame-4" class="absolute opacity-0" src="manchester/F4.png" alt="" width="50vw"/>
+      <bb-image-view id="manchester-frame-5" class="absolute opacity-0" src="manchester/F5.png" alt="" width="50vw"/>
+      <bb-image-view (imageLoadedEvent)="imageLoaded()" id="manchester-frame-6" class="absolute opacity-0" src="manchester/F6.png" alt="" width="50vw"/>
+    </div>
+
+    <div class="w-full aspect-video flex items-center justify-center relative">
+      <bb-text-view class="absolute" size="text">{{ 'manchester.info-text-2'|textContent }}</bb-text-view>
+    </div>
+
+    <div class="w -full aspect-video flex flex-col items-center justify-center">
+      <bb-text-view size="page-title">Ich glaube dir!</bb-text-view>
+    </div>
+  </div>
+
+  <div portrait>
+    <div id="manchester-animation-container-p"  class="w-full h-screen flex justify-center relative overflow-hidden">
+      <bb-text-view class="absolute top-[20vh]" mode="portrait" size="text">{{ 'manchester.info-text-1-p' | textContent }}</bb-text-view>
+      <bb-image-view id="manchester-frame-1-p" class="absolute opacity-1 top-[25vh] left-[-20vw]" src="manchester/F1.png" alt="" width="150vw"/>
+      <bb-image-view id="manchester-frame-2-p" class="absolute opacity-0 top-[25vh] left-[-20vw]" src="manchester/F2.png" alt="" width="150vw"/>
+      <bb-image-view id="manchester-frame-3-p" class="absolute opacity-0 top-[25vh] left-[-20vw]" src="manchester/F3.png" alt="" width="150vw"/>
+      <bb-image-view id="manchester-frame-4-p" class="absolute opacity-0 top-[25vh] left-[-20vw]" src="manchester/F4.png" alt="" width="150vw"/>
+      <bb-image-view id="manchester-frame-5-p" class="absolute opacity-0 top-[25vh] left-[-20vw]" src="manchester/F5.png" alt="" width="150vw"/>
+      <bb-image-view (imageLoadedEvent)="imageLoaded()" id="manchester-frame-6-p" class="absolute opacity-0 top-[25vh] left-[-20vw]" src="manchester/F6.png" alt="" width="150vw"/>
+    </div>
+
+    <div class="w-full h-screen flex justify-center relative">
+      <bb-text-view class="absolute top-[10vh]" mode="portrait" size="text">{{ 'manchester.info-text-2-p' | textContent }}</bb-text-view>
+      <bb-text-view class="absolute top-[70vh]" mode="portrait" size="page-title">Ich glaube dir!</bb-text-view>
+    </div>
+  </div>
+</bb-orientation-layout-container>
+

@@ -1,0 +1,46 @@
+<bb-orientation-layout-container>
+  <div landscape class="relative w-screen h-screen flex justify-center items-center overflow-hidden bg-bb-ivory">
+    <bb-image-view [src]="'/lissabon/F7.' + data.position.image + '.png'" alt="" width="100vw"/>
+    <div class="absolute w-[50vw] h-[35vw] flex flex-col gap-[3vw]">
+      <bb-text-view class="font-semibold" color="bb-celeste">Häufigkeit der Beschwerden: <span
+        class="font-normal italic">{{ data.record.frequency }}</span></bb-text-view>
+      <div class="w-full h-full overflow-y-auto
+  [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:bg-bb-celeste/30
+  [&::-webkit-scrollbar-thumb]:bg-bb-celeste/80
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+        <bb-text-view class="italic" color="bb-ivory">{{ data.record.description }}</bb-text-view>
+      </div>
+    </div>
+
+    @if (canNavigatePrevious()) {
+      <span (click)="navigateToPrevious()" class="select-none cursor-pointer absolute left-[5vw] text-[10vw] text-bb-celeste hover:scale-110 transition-transform"> < </span>
+    }
+    @if (canNavigateNext()) {
+      <span (click)="navigateToNext()" class="select-none cursor-pointer absolute right-[5vw] text-[10vw] text-bb-celeste hover:scale-110 transition-transform"> > </span>
+    }
+
+    <bb-text-view (click)="dialogRef.close()"
+                  class="absolute cursor-pointer right-[4dvw] top-[1dvw] hover:scale-105 transition-transform"
+                  size="text-menu"
+                  color="bb-scarlett">x</bb-text-view>
+  </div>
+
+  <div portrait (click)="dialogRef.close()" class="relative w-screen h-screen flex justify-center overflow-hidden bg-bb-ivory p-[5vw]">
+    <bb-image-view [src]="'/lissabon/F7.5.png'" alt="" width="90w"/>
+    <div class="absolute w-[70vw] h-[120vw] top-[20vw] flex flex-col gap-[3vw]">
+      <bb-text-view mode="portrait" class="font-semibold" color="bb-celeste">Häufigkeit der Beschwerden: <span
+        class="font-normal italic">{{ data.record.frequency }}</span></bb-text-view>
+      <div class="w-full h-full overflow-y-auto
+  [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:bg-bb-celeste/30
+  [&::-webkit-scrollbar-thumb]:bg-bb-celeste/80
+  dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+        <bb-text-view  mode="portrait"  class="italic" color="bb-ivory">{{ data.record.description }}</bb-text-view>
+      </div>
+    </div>
+  </div>
+
+</bb-orientation-layout-container>
