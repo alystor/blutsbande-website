@@ -1,9 +1,4 @@
-<div class="w-full aspect-video flex justify-center items-center">
-  <bb-image-view src="logo_scarlett.png" alt="" width="47vw"/>
-</div>
-
-<div class="w-full aspect-video flex flex-col justify-center items-center gap-[5vw]">
-  <bb-text-view size="text">{{ 'landing-page-text-1' | textContent }}</bb-text-view>
-
-  <bb-next-page-button url="/when-does-it-run" color="rosalie">wann läuft's?</bb-next-page-button>
-</div>
+<bb-orientation-layout-container>
+  <bb-landing-page-landscape landscape/>
+  <bb-landing-page-portrait portrait/>
+</bb-orientation-layout-container>

@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import {ImageView} from '../../components/image-view/image-view';
-import {TextView} from '../../components/text-view/text-view';
-import {TextContentPipe} from '../../pipes/text-content-pipe';
-import {NextPageButton} from '../../components/next-page-button/next-page-button';
+import {OrientationLayoutContainer} from '../../components/orientation-layout-container/orientation-layout-container';
+import {LandingPageLandscape} from './layouts/landing-page-landscape/landing-page-landscape';
+import {LandingPagePortrait} from './layouts/landing-page-portrait/landing-page-portrait';
 
 @Component({
   selector: 'bb-landing-page',
   imports: [
-    ImageView,
-    TextView,
-    TextContentPipe,
-    NextPageButton
+    OrientationLayoutContainer,
+    LandingPageLandscape,
+    LandingPagePortrait
   ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
