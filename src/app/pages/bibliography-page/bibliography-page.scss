@@ -1,0 +1,10 @@
+:host ::ng-deep .bb-link-in-text {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
