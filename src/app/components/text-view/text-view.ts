@@ -38,7 +38,7 @@ export class TextView {
       "page-sub-title": ["text-[4.2vh]"],
       "text": ["text-[1.75vh] leading-[3vh]"],
       "section-title": ["text-[4.1vw] font-bold"],
-      "text-title": ["text-[3.2vw] font-bold"],
+      "text-title": ["text-[3.2vh] font-bold"],
       "text-sub-title": ["text-[1.9vw] font-semibold"],
       "text-foot-note": ["text-[1vw] leading-[1vw]"],
       "text-quote": ["text-[1.4vw]"],

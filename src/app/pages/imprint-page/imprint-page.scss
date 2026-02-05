@@ -1,0 +1,10 @@
+:host ::ng-deep a {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
