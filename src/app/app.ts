@@ -18,8 +18,8 @@ export class App implements OnInit {
   ngOnInit() {
     OverlayScrollbars(document.body, {
       scrollbars: {
-        autoHide: 'leave',
-        autoHideDelay: 800,
+        autoHide: 'move',
+        autoHideDelay: 300,
       }
     });
   }
