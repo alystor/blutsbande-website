@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://use.typekit.net/ytn6eph.css");
+@import "overlayscrollbars/overlayscrollbars.css";
+
+.os-scrollbar {
+  --os-size: 0.4vw;
+  --os-handle-bg: theme('colors.bb-scarlett')
+}
 
 * {
   font-family: 'new-zen', sans-serif;
