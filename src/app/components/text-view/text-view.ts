@@ -34,8 +34,8 @@ export class TextView {
 
   private classDictionaryPortrait(): { [key: string]: string[] } {
     return {
-      "page-title": ["font-black", "text-[5vh]"],
-      "page-sub-title": ["text-[3.2vh]"],
+      "page-title": ["font-black", "text-[6vh]"],
+      "page-sub-title": ["text-[4.2vh]"],
       "text": ["text-[1.75vh] leading-[3vh]"],
       "section-title": ["text-[4.1vw] font-bold"],
       "text-title": ["text-[3.2vw] font-bold"],
