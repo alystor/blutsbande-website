@@ -16,7 +16,8 @@
     "info-text-2-p": "Fest steht: Keine Person sollte unter Schmerzen\nleiden müssen. Dieses Projekt ist insofern auch als\nAnreiz zu verstehen: Wenn du selbst menstruierst\nund unter Schmerzen leidest oder du jemanden\nkennst, ärztliche Hilfe aufzusuchen. Und wenn du\nund dein Schmerz nicht ernst genommen werden,\nscheu dich nicht davor, zu anderen Gynäkolog*in-\nnen zu wechseln.\n\nWenn du also das nächste Mal einer menstruie-\nrenden Person begegnest, die sagt sie hat starke\nSchmerzen, gibt es zumindest eine Sache, die du\ntun kannst. Du kannst zu der Person sagen:"
   },
   "dublin": {
-    "info-text-1": "Willkommen im ersten Teil dieses Projekts - hier erhältst du erstmal einen Überblick\nüber die Regelmäßigkeiten des Menstruationszyklus. Vorab beginnen wir aber mit\nein paar allgemeinen facts. Wenn du selbst nicht menstruierst, bietet dir diese Seite\ndie Möglichkeit, dich bestmöglich in dieses Erlebnis hineinversetzen zu können.\nWas genau damit gemeint ist, wirst du dann aber merken, wenn du dich ein Weilchen\ndurch die Seite gescrollt hast ... Fröhliches Bluten!"
+    "info-text-1-landscape": "Willkommen im ersten Teil dieses Projekts - hier erhältst du erstmal einen Überblick\nüber die Regelmäßigkeiten des Menstruationszyklus. Vorab beginnen wir aber mit\nein paar allgemeinen facts. Wenn du selbst nicht menstruierst, bietet dir diese Seite\ndie Möglichkeit, dich bestmöglich in dieses Erlebnis hineinversetzen zu können.\nWas genau damit gemeint ist, wirst du dann aber merken, wenn du dich ein Weilchen\ndurch die Seite gescrollt hast ... Fröhliches Bluten!",
+    "info-text-1-portrait": "Willkommen im ersten Teil dieses Projekts -\nhier erhältst du erstmal einen Überblick über\ndie Regelmäßigkeiten des Menstruationszyklus.\nVorab beginnen wir aber mit ein paar allgemeinen\nfacts. Wenn du selbst nicht menstruierst, bietet dir\ndiese Seite die Möglichkeit, dich bestmöglich in die-\nses Erlebnis hineinversetzen zu können. Was genau\ndamit gemeint ist, wirst du dann aber merken, wenn\ndu dich ein Weilchen durch die Seite gescrollt hast ...\nFröhliches Bluten!"
   },
   "frankfurt": {
     "info-text-1": "Vielleicht erinnerst du dich noch dunkel\nan die schulische Darstellung der Gebär-\nmutter. Räumlich sieht sie Wirklichkeit\netwas anders aus. Aus Platzgründen\nliegen die Eileiter mit den Ovarien sehr\nnah am Körper des Uterus. Ein wenig\nwie hier, nur noch etwas gequetschter."
@@ -117,5 +118,35 @@
   },
   "singapore": {
     "info-text-1": "Mit dieser Sammlung an verschiedensten Interpretationsrichtungen wird\ndeutlich, dass die allgemeine Auffassung von Menstruation stets recht an-\ndrozentrisch ausgelegt war - sich also nach einer Norm gerichtet hat, die\nden cis-Mann ins Zentrum stellt. Wie können wir einen gerechten Umgang\nmit Menstruation finden, der diese nicht auf Assoziationen des Mangels\nund der Schwäche reduziert und gleichzeitig die erlebten Beschwerden vie-\nler Menstruierender anerkennt? Eine allzu beschönigte und verblümte Um-\ngangsweise, auch Period Positivity genannt, wird dem biologischen Prozess\nebenso wenig gerecht. Das Projekt Blutsbande positioniert sich daher in\neinem Zwischenraum. Verkörperte Menstruation ist eine komplexe Ange-\nlegenheit, auf die viele, individuelle Definitionen zutreffen. Sie kann für je-\nde*n unterschiedlich sein. Damit ist sie alles andere als eindimensional."
+  },
+  "bibliography": {
+    "sub-title-1": "Hier findest du alle direkten und indirekten\nverwendeten Quellen. Sie sind chronologisch\nnach den einzelnen Inhaltsbereichen sortiert.",
+    "direct-quotation-1": "Hauser, P. & Mambourg, E. (1973): Deutung und Bedeutung der Menstruationsblutung. Therapeutische\nUmschau, 30, S. 472.",
+    "direct-quotation-2": "Janega, E. (2023): Die ideale Frau: Wie uns mittelalterliche Vorstellungen von Weiblichkeit noch heute prägen.\nÜbers. Karin Schuler. Berlin: Propyläen Verlag, S. 178.",
+    "direct-quotation-3": "Hering, S. & Maierhof, G. (2002): Die unpässliche Frau: Sozialgeschichte der Menstruation und Hygiene.\nFrankfurt am Main: Mabuse-Verlag, S. 140",
+
+    "when-does-it-run-1": "V. Jaschke & Pankow (1933): Lehrbuch der Gynäkologie.",
+    "when-does-it-run-2": "Mangler, M. (2024): Das große Gynbuch. Berlin: Suhrkamp Verlag.",
+    "when-does-it-run-3": "Laughey, von W. (2025) ,Pain in women: bridging the gender pain gap', Pain Management, PMID:\n40401085. Verfügbar unter: https://pubmed.ncbi.nlm.nih.gov/40401085/ [abgerufen am: 12.12.2025].",
+    "when-does-it-run-4": "Bundesministerium für Gesundheit (o.J.): Endometriose. Symptome und Behandlung. Verfügbar unter:\nhttps://gesund.bund.de/endometriose#auf-einen-blick [abgerufen am: 26.11.2025].",
+    "when-does-it-run-5": "Bundesministerium für Bildung und Forschung (2024) Stark-Watzinger: Wir stärken die Forschung\nzu Endometriose. Verfügbar unter: https://www.bmftr.bund.de/SharedDocs/Pressemitteilungen/\nDE/2024/09/100924-Endometriose.html [abgerufen am: 26.11.2025].",
+    "when-does-it-run-6": "AOK (2024) Endometriose: Die unsichtbare Krankheit - Interview mit Prof. Dr. Sylvia Mechsner, Charité.\nVerfügbar unter: https://www.aok.de/pp/gg/versorgung/interview-endometriose-mechsner-charite/\n[abgerufen am: 26.11.2025].",
+
+    "why-does-it-run-1": "Zaheer, A., Komel, A., Abu Bakr, M.B., Singh, A.K., Saji, A.S., Kharal, M.M., Ahsan, A., Khan, M.H. & Akbar, A.\n(2024):,Potential for and challenges of menstrual blood as a non-invasive diagnostic specimen: Current sta-\ntus and future directions', Annals of Medicine and Surgery, 86(8), S. 4591-4600. Verfügbar unter: https://doi.\norg/10.1097/MS9.0000000000002261\n[abgerufen am: 12.12.2025].",
+    "why-does-it-run-2": "Rahnama, M., Ghasemzadeh, N., Latifi, Z., Kheradmand, F., Abbasi Koukia, F., Sharun, K. & Golchin, A.\n(2025): ,Menstrual blood and endometrial mesenchymal stem/stromal cells: A frontier in regenerative medi-\ncine and cancer therapy', European Journal of Pharmacology, 1000, S. 177726. Verfügbar unter: https://doi.\norg/10.1016/j.ejphar.2025.177726 [abgerufen am: 26.11.2025].",
+    "why-does-it-run-3": "Catalini, L. & Fedder, J. (2020): ,Characteristics of the endometrium in menstruating species: lessons lear-\nned from the animal kingdom', Biology of Reproduction, 102(6), S. 1160-1169. Verfügbar unter: https://doi.\norg/10.1093/biolre/ioaa029 [abgerufen am: 26.11.2025].",
+    "why-does-it-run-4": "Bohannon, C. (2024): Eva. Das Wunder des weiblichen Körpers - und wie er seit 200 Millionen Jahren die\nEntwicklung des Lebens auf der Erde vorantreibt. C. Bertelsmann, München.",
+
+    "how-is-it-running-1": "Hauser, P. & Mambourg, E. (1973): Deutung und Bedeutung der Menstruationsblutung. Therapeutische Um-\nschau, 30, 472.",
+    "how-is-it-running-2": "Lonie, I. M. (1981): The Hippocratic Treatises \"On Generation\", \"On the Nature of the Child\", \"Diseases IV\": A Com-\nmentary. Ars Medica II 7. Berlin/New York: De Gruyter",
+    "how-is-it-running-3": "Hering, S. & Maierhof, G. (2002): Die unpässliche Frau: Sozialgeschichte der Menstruation und Hygiene. Frank-\nfurt am Main: Mabuse-Verlag.",
+    "how-is-it-running-4": "Janega, E. (2023): Die ideale Frau: Wie uns mittelalterliche Vorstellungen von Weiblichkeit noch heute prägen.\nÜbers. Karin Schuler. Berlin: Propyläen Verlag.",
+    "how-is-it-running-5": "Schnell, M. (2025): Frühneuzeitliche Ansichten über die Ursachen der Pest: Eine historische Studie anhand ge-\nlehrter Pestschriften. Deutschland: BoD - Books on Demand.",
+    "how-is-it-running-6": "Krafft-Ebing, R. (1902): Psychosis Menstrualis, Stuttgart",
+    "how-is-it-running-7": "Bobel, C., Winkler, I. T., Fahs, B., Hasson, K. A., Kissling, E. A. & Roberts, T .- A. (Hrsg.) (2020): The Palgrave Hand-\nbook of Critical Menstruation Studies. Singapore: Palgrave Macmillan.",
+    "how-is-it-running-8": "Przybyło, E. (2025): Ungendering Menstruation. University of Minnesota Press, Minneapolis.",
+
+    "how-does-it-run-1": "Schandry, R. (2025): Biologische Psychologie. 5. Auflage. Weinheim: Beltz. Schaetzing, E. (1954): Die Verstan-\ndene Frau. München.",
+    "how-does-it-run-2": "Kyathanahalli, C.N., et al. (2025): ,Seeking the root causes of menstrual pain: a systematic review of biomole-\ncules in menstrual effluent and the impact of non-hormonal medications, Pain Management, PMID: 40616466.\nVerfügbar unter: https://pubmed.ncbi.nlm.nih.gov/40616466/ [abgerufen am: 09.12.2025]."
   }
 }
