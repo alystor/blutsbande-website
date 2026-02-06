@@ -1,0 +1,8 @@
+/* Wrapper für D4-Bild: Ausblenden per Klasse, damit Chrome und WebKit gleich verhalten */
+.donetsk-d4-wrapper {
+  &.donetsk-d4-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

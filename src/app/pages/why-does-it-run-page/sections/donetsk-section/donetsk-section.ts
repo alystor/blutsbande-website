@@ -25,16 +25,17 @@ export class DonetskSection {
 
     const frames = [1, 2, 3].map(n => document.getElementById("donetsk-frame-" + n))
 
+    const d4Wrapper = document.getElementById("donetsk-frame-1-1-wrapper")!;
     ScrollTrigger.create({
       trigger: "#donetsk-animation-container",
       start: "top center",
       end: "top top",
       pin: true,
       onEnter: () => {
-        document.getElementById("donetsk-frame-1-1")!.style.opacity = '0'
+        d4Wrapper.classList.add("donetsk-d4-hidden");
       },
       onLeaveBack: () => {
-        document.getElementById("donetsk-frame-1-1")!.style.opacity = '1'
+        d4Wrapper.classList.remove("donetsk-d4-hidden");
       },
       onUpdate: self => {
         const imageIndex = Math.min(frames.length - 1, Math.floor(self.progress * frames.length))
