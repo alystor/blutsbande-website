@@ -6,6 +6,14 @@ import {HowIsItRunningPage} from './pages/how-is-it-running-page/how-is-it-runni
 import {MenstruationArchivePage} from './pages/menstruation-archive-page/menstruation-archive-page';
 import {ImprintPage} from './pages/imprint-page/imprint-page';
 import {BibliographyPage} from './pages/bibliography-page/bibliography-page';
+import {environment} from '../environments/environment';
+
+export const devRoutes: Routes = [
+  {
+    path: 'debug',
+    loadComponent: () => import('./pages/debug-page/debug-page').then(m => m.DebugPage),
+  }
+]
 
 export const routes: Routes = [
   {path: '', component: LandingPage, data: {showMenu: false}},
@@ -14,5 +22,7 @@ export const routes: Routes = [
   {path: 'how-is-it-running', component: HowIsItRunningPage, data: {showMenu: true, menuSrc: "menu_violet.png"}},
   {path: 'how-does-it-run', component: MenstruationArchivePage, data: {showMenu: true, menuSrc: "menu_celeste.png"}},
   {path: 'imprint', component: ImprintPage, data: {showMenu: true, menuSrc: "menu_ruby.png"}},
-  {path: 'bibliography', component: BibliographyPage, data: {showMenu: true, menuSrc: "menu_ruby.png"}}
+  {path: 'bibliography', component: BibliographyPage, data: {showMenu: true, menuSrc: "menu_ruby.png"}},
+
+  ...(environment.production ? [] : devRoutes)
 ];
