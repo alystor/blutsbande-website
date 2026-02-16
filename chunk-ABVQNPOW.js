@@ -1,0 +1,1 @@
+import{Sa as a,mb as n,nb as o,yb as p}from"./chunk-CHH7KNB6.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["bb-debug-page"]],decls:2,vars:0,template:function(e,i){e&1&&(n(0,"p"),p(1,"debug-page works!"),o())},encapsulation:2})};export{s as DebugPage};
